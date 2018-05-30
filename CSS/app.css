@@ -1,0 +1,68 @@
+*,
+*:before,
+*:after {box-sizing: border-box;}
+
+.new-note-form {
+    margin-bottom: 25px;
+    display: initial;
+}
+.new-note-content {
+    width:70%;
+    display: inline-block;
+    font-size: 1.3em;
+}
+
+.notes {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+.note {
+    display: inline-block;
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding:10px;
+    list-style-type: none;
+    background-color: yellowgreen;
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.note-date {
+    font-size:0.7em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.buttonStyle {
+    position: relative;
+    vertical-align: top;
+    width: 10%;
+    height: 30px;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #16a085;
+    border: 0;
+    border-bottom: 2px solid #14947b;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #14947b;
+    box-shadow: inset 0 -2px #14947b;
+  }
+  .buttonStyle:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  #clear {
+      display: inline-block;
+  }
+  #submit {
+    display: inline-block;
+}
+
+  
