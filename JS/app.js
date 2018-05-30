@@ -49,11 +49,7 @@ $(function() {
             });
             this.render();
         },
-
-        // clear: function() {
-        //     localStorage.hellerNotes = "[]";
-        // },        
-
+        
         render: function() {
             var notesArr = octopus.getAllNotes();
             // liArr = "";

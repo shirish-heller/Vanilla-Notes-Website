@@ -2,6 +2,9 @@
 *:before,
 *:after {box-sizing: border-box;}
 
+body{
+    background-color: coral
+}
 .new-note-form {
     margin-bottom: 25px;
     display: initial;
@@ -12,7 +15,7 @@
     font-size: 1.3em;
 }
 .new-note-content:focus {
-    border-color: lightseagreen;
+    border-color: white;
 }
 
 .notes {
@@ -27,14 +30,13 @@
     margin-bottom: 20px;
     padding:10px;
     list-style-type: none;
-    background-color: yellowgreen;
+    background-color: #4DB4A0;
     color: cornsilk;
-    text-shadow: white;
+    text-shadow: 0.2px 0.2px 2px white;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 1px 3px 10px lightseagreen;
+    box-shadow: 1px 3px 8px 4px #4DB4A0;
     overflow: hidden;
-    /* border: 1px solid lightseagreen; */
 }
 
 .note-date {
