@@ -22,12 +22,13 @@ $(function() {
         },
         addNewNote: function(newNote) {
             model.addNote({
-                note: newNote
+                note: newNote,
+                date: new Date()
             });
             view.render();
         },
         getAllNotes() {
-            return model.getNotes();
+            return model.getNotes().reverse();
         }
 
     }
@@ -49,7 +50,7 @@ $(function() {
             });
             this.render();
         },
-        
+
         render: function() {
             var notesArr = octopus.getAllNotes();
             // liArr = "";
@@ -59,9 +60,13 @@ $(function() {
                 var li = document.createElement('li');
                 li.setAttribute('class', 'note');
                 var text = document.createTextNode(element.note);
+                var date = document.createElement('span');
+                date.setAttribute('class', 'note-date');
+                var dateVal = document.createTextNode(element.date);
+                date.appendChild(dateVal);
                 li.appendChild(text);
+                li.appendChild(date);
                 ul.append(li);
-                // ul.html(liArr);
             });
         }
 
