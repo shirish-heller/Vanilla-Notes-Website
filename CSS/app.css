@@ -79,4 +79,21 @@ body{
     display: inline-block;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
+p.cross {
+    width: 30%;
+}
+
+p.cross:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.note.noteCompleted {
+    background-color: black;
+}
+
   
