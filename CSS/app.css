@@ -85,6 +85,7 @@ body{
 
 p.cross {
     width: 30%;
+    font-size: 15px;
 }
 
 p.cross:hover {
@@ -93,7 +94,7 @@ p.cross:hover {
 }
 
 .note.noteCompleted {
-    background-color: black;
+    background-color: #C0B865;
 }
 
   
